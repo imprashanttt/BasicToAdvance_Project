@@ -2,6 +2,7 @@
 In this ToDo project we gonna create list of todo
 where we gonna provide user a method to remove, upload, delete and update todo
 make priority on top 1 todo
+just using list, function and loops
 """
 
 import pprint
