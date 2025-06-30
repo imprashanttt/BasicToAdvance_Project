@@ -36,7 +36,7 @@ def contactBook():
             if choice=='delete':
                 name = input("Enter the person name:- ").capitalize()
                 if name in contact.keys():
-                    contact.remove(name)
+                    del contact[name]
                     print("deleted successFully")
                 else:
                     print("this contact is not on your app")

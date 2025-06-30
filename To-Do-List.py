@@ -29,8 +29,8 @@ def Todo():
             todo = input("Enter your todo:- ")
             priority: bool = input(
                 "Did you make it on your top priority (True/False):- "
-            )
-            if priority:
+            ).lower()
+            if priority=='true':
                 TODO_LIST.insert(0, todo)
             else:
                 TODO_LIST.append(todo)

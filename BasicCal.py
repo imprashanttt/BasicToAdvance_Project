@@ -6,8 +6,8 @@ Also handled input errors.
 
 def calculator():
     try:
-        num1 = (int(input("Enter your first Number:- ")),)
-        num2 = (int(input("Enter your Second Number:- ")),)
+        num1 = int(input("Enter your first Number:- "))
+        num2 = int(input("Enter your Second Number:- "))
     except ValueError:
         print("Please enter a integer value!")
         return None
@@ -20,6 +20,7 @@ def calculator():
         or choice == "divide"
         or choice == "exponent"
         or choice == "square"
+        or choice == "difference"
     ):
         if choice == "sum":
             print(num1 + num2)
